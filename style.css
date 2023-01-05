@@ -1,7 +1,23 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --weigth: 500;
+  --weight: 700;
+  --size-title: 1.4em;
+  --size-text: .965em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--light-gray);
 }
 
 img {
@@ -10,6 +26,46 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.card {
+  width: 100%;
+  height: calc(100vh - 18px);
+  display: grid;
+  place-content: center;
+}
+
+.card__containercard {
+  width: 20rem;
+  border-radius: .9rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card__containerimages {
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.card__content {
+  text-align: center;
+  padding: .85rem;
+}
+
+.card__title {
+  font-size: var(--size-title);
+  color: var(--dark-blue);
+  margin-bottom: .75rem;
+}
+
+.card__information {
+  font-size: var(--size-text);
+  color: var(--Grayish-blue);
 }
 
 /* Styles of attribution */
